@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "description": "Fazer edição de fotos",
+      "status": "close",
+      "date_start": "2021-05-21",
+      "date_end": "2021-05-21",
+      "id": 1
+    },
+    {
+      "description": "Fazer edição de fotos rer",
+      "date_start": "2021-05-22",
+      "date_end": null,
+      "status": "close",
+      "id": 2
+    }
+  ]
+}
