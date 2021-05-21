@@ -18,7 +18,12 @@
     </v-app-bar>
     <v-navigation-drawer color="#2C333E" app dark v-model="drawer">
       <v-sheet color="#2C333E" class="pa-4">
-        <v-avatar class="mb-4" color="grey darken-1" size="64"></v-avatar>
+        <v-avatar class="mb-4" color="grey darken-1" size="64">
+          <v-img
+            height="100%"
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+          />
+        </v-avatar>
 
         <div>matheus@dev.com</div>
       </v-sheet>
@@ -45,7 +50,6 @@
 
       <v-list dense>
         <v-list-item-group>
-         
           <template v-for="(link, index) in links">
             <v-list-item
               link
@@ -103,7 +107,7 @@ export default {
         name: "Tasks",
         icon: "mdi-format-list-bulleted-square",
       },
-      
+
       {
         route: "/configuraçoes",
         name: "Configurações",
@@ -113,7 +117,7 @@ export default {
   }),
 
   async created() {
-   // this.$store.dispatch("company/index");
+    // this.$store.dispatch("company/index");
   },
 };
 </script>
