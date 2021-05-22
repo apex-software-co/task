@@ -6,7 +6,7 @@ Vue.use({
   install (Vue) {
     
     let http = new Http({
-      baseURL: 'http://localhost:3000/'
+      baseURL: 'http://172.31.3.9:3000/'
     })
 
     Vue.prototype.$http = http
