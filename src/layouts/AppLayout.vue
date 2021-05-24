@@ -10,7 +10,7 @@
       <v-icon>mdi-triangle</v-icon>
     </v-system-bar> -->
     <v-app-bar app flat>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title
         ><h3>{{ $route.meta.name }}</h3></v-toolbar-title
@@ -103,13 +103,17 @@ export default {
     drawer: true,
     links: [
       {
+        route: "/",
+        name: "Home",
+        icon: "mdi-home",
+      },
+      {
         route: "/tasks",
         name: "Tasks",
         icon: "mdi-format-list-bulleted-square",
       },
 
       {
-        route: "/configuraçoes",
         name: "Configurações",
         icon: "mdi-cog",
       },
